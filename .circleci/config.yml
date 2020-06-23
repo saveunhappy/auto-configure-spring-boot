@@ -12,10 +12,10 @@ jobs:
           command: ./.circleci/verifyWhitelist.sh
       - run:
           name: Install starter
-          command: mvn install -DskipTests
+          command: mvn install -DskipTests -PmavenCentral
       - run:
           name: Test app
-          command: mvn verify
+          command: mvn verify -PmavenCentral
       - save_cache: # saves the project dependencies
           paths:
             - ~/.m2
