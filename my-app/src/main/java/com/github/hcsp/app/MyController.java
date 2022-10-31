@@ -11,7 +11,7 @@ import java.util.List;
 public class MyController {
     @GetMapping("/users")
     @MyResponseBody
-    public List<User> users() {
+    public List<User> usersaaaaa() {
         return Arrays.asList(new User(1, "A"), new User(2, "B"));
     }
 
